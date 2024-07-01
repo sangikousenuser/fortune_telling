@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>占いサイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>占いサイト</h1>
+        <form id="fortune-form">
+            <label for="birthday">誕生日:</label>
+            <input type="date" id="birthday" name="birthday" required>
+            <label for="greek-letter">好きなギリシャ文字:</label>
+            <select id="greek-letter" name="greek-letter" required>
+                <option value="alpha">α (Alpha)</option>
+                <option value="beta">β (Beta)</option>
+                <option value="gamma">γ (Gamma)</option>
+                <option value="delta">δ (Delta)</option>
+                <option value="epsilon">ε (Epsilon)</option>
+                <option value="zeta">ζ (Zeta)</option>
+                <option value="eta">η (Eta)</option>
+                <option value="theta">θ (Theta)</option>
+                <option value="iota">ι (Iota)</option>
+                <option value="kappa">κ (Kappa)</option>
+                <option value="lambda">λ (Lambda)</option>
+                <option value="mu">μ (Mu)</option>
+                <option value="nu">ν (Nu)</option>
+                <option value="xi">ξ (Xi)</option>
+                <option value="omicron">ο (Omicron)</option>
+                <option value="pi">π (Pi)</option>
+                <option value="rho">ρ (Rho)</option>
+                <option value="sigma">σ (Sigma)</option>
+                <option value="tau">τ (Tau)</option>
+                <option value="upsilon">υ (Upsilon)</option>
+                <option value="phi">φ (Phi)</option>
+                <option value="chi">χ (Chi)</option>
+                <option value="psi">ψ (Psi)</option>
+                <option value="omega">ω (Omega)</option>
+            </select>
+            <button type="submit">占う</button>
+        </form>
+        <div id="loading" style="display:none;">
+            <p>占っています...</p>
+        </div>
+        <div id="result" style="display:none;">
+            <h2>結果</h2>
+            <p id="personality"></p>
+            <p id="favorite-subject"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
